@@ -4,19 +4,19 @@ import StudentTable from './components/StudentTable';
 import {students} from './data/StudentsDb'
 
 function App() {
-  const [fontSize, setFontSize] = useState(12);
+  const [fntSize, setFontSize] = useState(16);
   return (
     <div className="App">
       <h1>Student Information Portal</h1>
       <hr/>
-      <div align="left">
+      <div align="left" >
         Font Size:
-        <button>S</button>
-        <button>M</button>
-        <button>L</button>
+        <button onClick={()=>{setFontSize(16)}}>S</button>
+        <button onClick={()=>{setFontSize(20)}}>M</button>
+        <button onClick={()=>{setFontSize(24)}}>L</button>
       </div>
       <hr/>
-      <table width="100%">
+      <table width="100%" style={{ fontSize: `${fntSize}px`}}>
         <tbody>
           <tr>
             <td>
