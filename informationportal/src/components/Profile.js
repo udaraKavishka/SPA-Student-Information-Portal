@@ -6,9 +6,9 @@ function Profile(props) {
         <table>
             <tr>
                 <td rowSpan={7}>
-                    <img src={require('../assets/img/1.jpg')} alt="Profile" />
+                    <img className="profile" src={require('../assets/img/1.jpg')} alt="Profile" />
                 </td>
-                <td>ID</td>
+                <td>ID {props.stu.studentId}</td>
             </tr>
         </table>
     </>
